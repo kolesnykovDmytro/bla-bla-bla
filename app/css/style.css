@@ -1,0 +1,53 @@
+
+
+
+
+
+
+
+
+/*.contactForm .inputContainer .message {
+  color: #FF5C5C;
+  background: transparent;
+  position: absolute;
+  top: 23px;
+  width: 0;
+  margin: 0;
+  line-height: 4.5em;
+  text-align: left;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid red;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  height: 0px;
+  left: 0px;
+}*/
+/*.contactForm .inputContainer label,
+.contactForm .inputContainer input, {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1em;
+  border: none;
+  font: inherit;
+}*/
+
+/*.contactForm .inputContainer input {
+  width: 100%;
+  max-width: 100%;
+}*/
+/*.contactForm .inputContainer input {
+  padding-left: 50px;
+}*/
+/*.contactForm.success {
+  overflow: hidden;
+}*/
+/*.contactForm.success .formBody form {
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}*/
+
+

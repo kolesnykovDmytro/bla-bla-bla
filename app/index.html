@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+</head>
+<body>
+	<!-- begin container -->
+	<div class="container">
+		<!-- begin container-image -->
+		<div class="container-image">
+			<div class="counter_block">
+				<div class="counter_value">
+					<span></span>%
+				</div>
+				<p></p>
+			</div>
+			<footer class="footer">
+				<nav class="footer__nav">
+					<ul class="nav__list">
+						<li class="list__item"><a href="#">название1</a></li>
+						<li class="list__item"><a href="#">название2</a></li>
+						<li class="list__item"><a href="#">название3</a></li>
+						<li class="list__item"><a href="#">название4</a></li>
+						<li class="list__item"><a href="#">очень длинное название5</a></li>
+						<li class="list__item"><a href="#">очень длинное название6</a></li>
+						<li class="list__item"><a href="#">длинное название7</a></li>
+						<li class="list__item"><a href="#">длинное название8</a></li>	
+					</ul>
+				</nav>
+			</footer>
+		</div>
+		<!-- end container-image -->
+		<!-- begin start sidebar -->
+		<aside class="form-sidebar sidebar-start" id="start_bar">
+			<div class="sidebar__content">
+				<h2 class="content__title">Lorem ipsum</h2>
+				<p class="title__text-top">Mauris vel nisi ac orci<br>placerat semper. Aenean sapien massa.</p>
+				<p class="title__text-sub">Lorem Ipsum?</p>
+				<a href="#" class="btn__start btn_go">Начать</a>
+			</div>
+		</aside>
+		<!-- end start sidebar -->
+		<!-- begin second sidebar -->
+		<aside class="form-sidebar sidebar-second content_block" id="second_bar">
+			<div class="sidebar__content">
+				<h2 class="content__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aurna sit amet</h2>
+				<fieldset class="field-form">
+					<form action="#" class="form__inner">
+						<p class="form__item">
+							<input class="radio__check" data-statistic-count="40" data-statistic-text="людей обращают внимание на А." type="radio" id="radio1" name="radio-category" />
+							<label class="radio__label" for="radio1">Вариант А</label>
+						</p>
+						<p class="form__item">
+							<input class="radio__check" data-statistic-count="30" data-statistic-text="людей обращают внимание на Б." type="radio" id="radio2" name="radio-category" />
+							<label class="radio__label" for="radio2">Вариант Б</label>		
+						</p>
+						<p class="form__item">
+							<input class="radio__check"  data-statistic-count="30" data-statistic-text="людей обращают внимание на В."type="radio" id="radio3" name="radio-category" />
+							<label class="radio__label" for="radio3">Вариант В</label>	
+						</p>
+					</form>
+				</fieldset>	
+				<a href="#" class="btn__start btn-next" id="btnNext">Продолжить</a>
+			</div>
+		</aside>
+		<!-- end second sidebar -->
+		<!-- begin third sidebar -->
+		<aside class="form-sidebar sidebar-third" id="third_bar">
+			<div class="sidebar__content contactForm" id="contactForm">
+				<h2 class="content__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </h2>
+				<fieldset class="field-form formBody" id="formBody">
+					<form action="" class="form__inner" method="POST" name="contactForm">
+						<span>Я ищу:</span>
+						<div class="form__person">
+							<p class="person__item">
+								<input class="radio__check" type="radio" id="radio_man" name="radio-category" />
+								<label class="radio__label label-man" for="radio_man"><i class="icon-man"></i>Вариант 1</label>
+							</p>
+							<p class="person__item">
+								<input class="radio__check" type="radio" id="radio_woman" name="radio-category" />
+								<label class="radio__label label-woman" for="radio_woman"><i class="icon-woman"></i>Вариант 2</label>
+							</p>
+						</div>
+
+						<div class="form__info">
+							<p class="info__item inputContainer">
+								<input type="name" id="userName">
+								<label for="userName">Ваше имя:</label>
+							</p>
+							<p class="info__item inputContainer">
+								<input type="email" id="userEmail">
+								<label for="userEmail">Email:</label>
+							</p>
+							<p class="info__item inputContainer">
+								<input type="password" id="userPassword" required>
+								<label for="userPassword">Придумайте пароль:</label>
+							</p>
+							<p class="info__item-check">
+								<input type="checkbox" required>
+								<label for="">Регистрируясь, вы подтверждаете, что вам уже исполнилось<br>18 лет и вы ознакомились с условиями пользования сайтом.</label>
+							</p>
+						</div>
+						<input class="btn__start btn-form" id="submitBtn" type="submit" value="Продолжить">
+					</form>
+				</fieldset>	
+			</div>
+		</aside>
+		<!-- end third sidebar -->
+	</div>
+	<!-- end container	 -->
+<!-- 	[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif] -->
+	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+	<script src="js/scripts.min.js"></script>
+	<script src="js/formValidation.js"></script>
+	<script src="js/animScript.js"></script>
+</body>
+</html>

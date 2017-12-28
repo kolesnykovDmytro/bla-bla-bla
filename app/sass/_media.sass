@@ -1,0 +1,211 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1440px)
+	.contactForm .inputContainer.error .message
+		height: 65%
+		top: 24px
+		line-height: 3.5em
+
+	.counter_block
+		width: 66%
+	.form-sidebar
+		width: 35%
+		padding-top: 7em
+	.sidebar-second,.sidebar-third
+		.sidebar__content
+			padding: 1em 1em 0 2em
+			.content__title
+				font-size: 2.5rem
+			.btn-next
+				font-size: 16px
+				margin: 50px auto 0
+	.field-form
+		.form__inner
+			align-items: center
+			.form__item
+				width: 300px				
+			.form__person
+				.person__item
+					width: 200px
+					.radio__label
+
+	.sidebar-third
+		.sidebar__content
+			.field-form
+				.form__inner
+					.form__info
+						.info__item
+							input
+								height: 55px
+					.form__person
+						.person__item
+							.radio__label
+								font-size: 18px!important
+								padding: 14px 20px 
+								.icon-man, .icon-woman
+									top: 10px
+					.btn-form
+						width: 250px
+						height: 60px
+						line-height: 60px
+						font-size: 20px 
+
+	
+	.info_block
+		.info__count
+			.count__value
+				font-size: 250px
+			.count__text
+				font-size: 32px
+	.container-image
+		.footer
+
+	.container-image
+		.footer
+			width: 65%
+			.footer__nav
+				.nav__list
+					.list__item
+						padding: 0 5px
+						font-size: 10px
+						text-align: center
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.sidebar-third
+		.sidebar__content
+			.field-form
+				.form__inner
+					.form__person
+						flex-direction: column
+						.person__item
+							.radio__label
+								padding: 8px 20px
+								.icon-man,.icon-woman
+									top: 2px
+					.form__info
+						.info__item
+							input
+								height: 40px
+						.info__item-check
+							font-size: 8px
+					.btn-form
+						width: 180px
+						height: 30px
+						line-height: 30px
+						font-size: 12px
+
+	.contactForm .inputContainer.error .message
+		height: 58%
+		top: 24px
+		font-size: 12px
+
+	.counter_block
+		width: 46%
+		.counter_value
+			font-size: 112px
+		p
+			font-size: 24px
+	.form-sidebar
+		width: 55%
+		padding-top: 2em
+		.sidebar__content
+			padding: 2em 1em 0 2.75em
+			.title__text-sub
+				font-size: 2.3rem
+			.btn__start
+				width: 240px
+				height: 65px
+				line-height: 65px
+				font-size: 24px
+	.container-image
+		.footer
+			width: 45%
+			.footer__nav
+				.nav__list
+					flex-direction: column
+	.sidebar-third
+		.sidebar__content
+			.content__title
+				font-size: 24px
+
+@media only screen and (max-width : 550px)
+	.field-form
+		.form__inner
+			.form__item
+				width: 220px
+	.counter_block
+		justify-content: flex-start
+		width: 100%
+		.counter_value
+			font-size: 60px
+			line-height: 1
+		p
+			font-size: 16px
+	.container
+		display: flex
+		flex-direction: column
+		.container-image
+			width: 100%
+			height: 300px
+			z-index: -1 
+			.footer
+				display: none
+		.form-sidebar
+			width: 100%
+			margin-top: 50%
+			padding: 0.7em 0 0 0
+			&:before
+				top: -35px
+				left: 35px
+			.sidebar__content
+				padding: 2em 1em 
+				.title__text-sub
+					margin-top: 25px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

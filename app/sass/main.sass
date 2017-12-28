@@ -1,0 +1,286 @@
+@import "base"
+.container
+	height: 100%
+.container-image
+	background: url(../img/bg.png) no-repeat top center
+	background-size: cover
+	height: auto
+	display: flex
+	align-items: flex-end
+	width: 100%
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	.footer
+		background-color: rgba(255, 255, 255, .7)
+		.footer__nav
+			.nav__list
+				display: flex
+				justify-content: center
+				font-size: 12px
+				align-items: center
+				.list__item
+					padding: 0 20px
+
+.counter_block
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	visibility: hidden
+	font-family: $extra
+	position: absolute
+	top: 0
+	left: 0
+	height: 100%
+	width: 56%
+	z-index: 10
+	opacity: 0
+	text-align: left
+	color: #fff
+	&:before
+		content: ''
+		background-color: rgba(252, 137, 80, .7)
+		position: absolute
+		top: 0
+		right: 0
+		left: 0
+		bottom: 0
+		opacity: 0.7
+	.counter_value
+		font-size: 340px
+		position: relative
+	p
+		font-size: 40px
+		text-align: left
+		position: relative
+		text-transform: uppercase
+
+.active
+	visibility: visible
+	opacity: 1
+	transition: all 0.5s ease-in-out
+
+.form-sidebar
+	padding: 13.7em 0 0 1em
+	background: $start-bg
+	height: 100%
+	width: 25%
+	position: absolute
+	top: 0
+	right: 0
+	&:before
+		content: ''
+		position: absolute
+		top: 305px
+		left: -34px
+		width: 90px
+		height: 90px
+		background: url(../img/icon-sprite.png) no-repeat top center
+		background-position: 1px 1px
+		z-index: 99
+	.sidebar__content
+		background: #fff
+		padding: 6em 3em 0 3.75em
+		height: 100%
+		text-transform: uppercase
+		margin-bottom: 0
+		.content__title
+			font-size: 3.1rem
+			color: $start-bg
+			margin-top: 10px
+		.title__text-top
+			font-size: 2.4rem
+			font-family: $semi
+			font-weight: 600
+		.title__text-sub
+			margin-top: 125px
+			font-size: 3.3rem
+		.btn__start
+			display: block
+			background: $start-bg
+			width: 275px
+			height: 75px
+			margin-top: 20px
+			border-radius: 20px
+			text-align: center
+			color: #fff
+			line-height: 75px
+			text-transform: uppercase
+			font-size: 42px
+
+.sidebar-second, 
+	background: $second-bg
+	width: 44.5%
+	right: -100%
+	&:before
+		background-position: -90px 0
+	.sidebar__content
+		background: rgb(246,245,245)
+		padding-top: 4.6em
+		padding-right: 7em
+		.content__title
+			color: $second-bg
+		.btn-next
+			background: $second-bg
+			width: 280px
+			font-size: 26px
+			margin-top: 97px
+			margin-left: 43px
+
+.field-form
+	.form__inner
+		display: flex
+		flex-direction: column
+		.form__item, .person__item
+			margin-bottom: 18px
+			position: relative
+			width: 384px
+			.radio__check
+				position: absolute
+				left: 0
+				top: 0
+				height: 100%
+				display: none
+				&:checked + label
+					background: $second-bg
+					color: #fff
+			.radio__label
+				text-align: center
+				padding: 25px 20px
+				display: block
+				border: 1px solid #d3d3d3
+				border-radius: 10px
+				font-size: 26px
+				line-height: 26px
+				color: #3b3b3b
+				font-weight: 500
+				cursor: pointer
+				text-transform: initial
+				font-family: $semi
+				font-weight: 600
+				transition: all 0.5s
+				&:hover
+					box-shadow: 0 0 10px #666
+					
+
+.sidebar-third
+	background: $third-bg
+	width: 44.5%
+	right: -100%
+	&:before
+		background-position: -180px 0
+	.sidebar__content
+		text-transform: initial
+		background: rgb(246,245,245)
+		padding-top: 4.6em
+		padding-right: 7em
+		.content__title
+			color: $third-bg
+			text-transform: uppercase
+			margin-bottom: 0
+		.field-form
+			font-family: $semi
+			font-weight: 600
+			.form__inner
+				max-width: 475px
+				span
+					font-size: 18px
+					font-family: $semi
+					font-weight: 600
+					padding-top: 10px
+				.form__person
+					display: flex
+					justify-content: flex-start
+					.person__item
+						margin-right: 20px
+						.radio__label
+							font-size: 24px
+							position: relative
+							text-align: right
+							.icon-man, .icon-woman
+								position: absolute
+								top: 16px
+								left: 20px
+								width: 35px
+								height: 38px
+								background: url(../img/icon-sprite.png) no-repeat -47px -92px
+							.icon-woman
+								background: url(../img/icon-sprite.png) no-repeat -8px -92px
+
+						.radio__check
+							&:checked + label
+								background: $third-bg
+								color: #fff
+								.icon-woman
+									background: url(../img/icon-sprite.png) no-repeat -89px -92px
+								.icon-man
+									background: url(../img/icon-sprite.png) no-repeat -130px -92px
+							
+				.form__info
+					.info__item
+						display: flex
+						flex-direction: column-reverse
+						align-items: flex-start
+						position: relative
+						input
+							width: 96%
+							border-radius: 10px
+							border: 1px solid #d3d3d3
+							height: 80px
+							margin-bottom: 5px
+							outline: none
+							padding-left: 30px
+					.info__item-check
+						margin-top: 15px
+						font-size: 12px
+						letter-spacing: 0.6px
+						display: flex
+						align-items: center
+						input
+							margin-right: 10px
+				.btn-form
+					background: #fff
+					border: 1px solid $third-bg
+					color: #aaa9a9
+					width: 280px
+					font-size: 26px
+					outline: none 
+// style for warning message
+.contactForm
+	.inputContainer
+		.message
+			color: #FF5C5C
+			background: transparent
+			position: absolute
+			top: 23px
+			width: 0
+			margin: 0
+			line-height: 4.5em
+			text-align: left
+			overflow: hidden
+			border-radius: 10px
+			border: 1px solid red
+			transition: all 0.1s ease
+			height: 0px
+			left: 0px
+			
+.contactForm.success .formBody form
+  transition: opacity 0.5s ease
+  opacity: 0
+
+.contactForm .inputContainer.error
+  border-color: #e85454
+
+.contactForm .inputContainer.error .message
+  width: 96%
+  height: 70%
+
+.contactForm .inputContainer.error input
+  color: #FF5C5C
+
+
+
+@import "media"
